@@ -1,0 +1,2 @@
+Use engine.connect to add a way to turn some expressions such as "period" and "question mark" to their character counterparts "." and "?"
+Potentially try to replace pyttsx3 with gtts
