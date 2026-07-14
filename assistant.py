@@ -61,13 +61,13 @@ def onStart(name, location, length):
 
 while(active):
     text = record_text()
+    if text == None:
+        continue
     if ("end" in text) or ("terminate" in text) or ("quit" in text) or ("kill" in text):
         active = False
         break
-    if text == None:
-        text = ""
-    # output_text(text)
 
     print("Wrote text: "+ text)
+    print ("passed connection")
     engine.connect('started-word', onStart)
     speak(text)
