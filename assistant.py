@@ -40,13 +40,6 @@ def record_text():
     except KeyboardInterrupt:
         pass
 
-def output_text(text):
-    f = open(r"Desktop Assistant\desktop_assistant_logs.txt", "w")
-    f.write(text)
-    f.write("\n")
-    f.close()
-    return
-
 def speak(sentence_string):
     # Convert text to speech
     engine.say(str(sentence_string))
@@ -68,6 +61,5 @@ while(active):
         break
 
     print("Wrote text: "+ text)
-    print ("passed connection")
     engine.connect('started-word', onStart)
     speak(text)
