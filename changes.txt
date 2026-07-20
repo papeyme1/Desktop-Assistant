@@ -1,0 +1,2 @@
+Added timeout to voice detection after 3 consecutive failures
+Fixed function retrival output speech not getting correct input
