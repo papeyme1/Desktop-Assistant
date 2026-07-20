@@ -1,2 +1,3 @@
-Added timeout to voice detection after 3 consecutive failures
-Fixed function retrival output speech not getting correct input
+July 19th, 2026
+    Assistant can now dynamically read function file for potential executables
+    Added timeout to voice detection after 3 consecutive failures
